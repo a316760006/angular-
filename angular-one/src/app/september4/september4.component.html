@@ -1,0 +1,24 @@
+<!-- <div appChangecolor>asdas</div> -->
+<!-- <div>126416</div> -->
+
+<!-- 自定义通道 -->
+<!-- <p>{{'32425151'|changer:2}}</p> -->
+<!-- 三目判断 -->
+<!-- <p>{{'m'|changer}}</p> -->
+<!-- 实现字符串的重复输入 -->
+<!-- <p>{{"123"|changer:3}}</p> -->
+<!-- 4 的 3 次幂 -->
+<!-- <p>{{4|changer:3}}</p> -->
+<!-- 双向数据绑定(针对表单的) -->
+
+
+<input type="text" [(ngModel)]="modle">
+<p>{{modle}}</p>
+<!-- 绑定的 checkbox -->
+<input type="checkbox" [(ngModel)]="checkbox">
+<p>{{checkbox}}</p>
+<!-- 绑定 value 值 -->
+<select name="" id="" [(ngModel)]="selected">
+    <option value="{{item}}" *ngFor="let item of list">{{item}}</option>
+</select>
+<p>{{selected}}</p>

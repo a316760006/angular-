@@ -1,0 +1,31 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.Angular-Box{
+    background: skyblue;
+}
+/* *{margin:0 auto;padding:0}
+.list1{list-style: none;width:500px;}
+.list1 li{float: left;
+    border:1px solid red;
+    width:100px;height: 50px;text-align: center;line-height: 50px;}
+.content{clear: both;width:500px;border: 1px solid blue;display: none}
+.active{background-color: green}
+.active1{display: block}
+.first{color:red}
+.second{background-color: green} */
+
+.a1{
+    width:100px;height: 100px;background-color: blue
+}
+.c1{
+    width:200px;height: 100px;background-color: blueviolet
+}
+.c2{border:1px solid red}
+.flex{
+    display: flex
+}
+.flex-bw{
+    justify-content: space-between;
+}

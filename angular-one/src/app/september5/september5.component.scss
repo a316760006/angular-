@@ -1,0 +1,18 @@
+table{
+    border-spacing: 0px;
+    border: 1px solid black;
+    td{
+        padding: 5px;
+        text-align: center;
+    }
+    thead{
+        td{
+            border: 1px solid black;
+        }
+    }
+    tbody{
+        td{
+            border: 1px solid black;
+        }
+    }
+}

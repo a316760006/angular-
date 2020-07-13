@@ -1,0 +1,39 @@
+<!-- 导航栏 -->
+<!-- <div class="div8-30">
+    <ul class="nav-list8-30">
+        <li *ngFor="let item of array ;let i=index" [class]="i==case?'active':''" (mouseover)="setBgc(i)">{{item}}</li>
+    </ul>
+    <ul [ngSwitch]='case' class="nav-content8-30">
+        <li *ngSwitchCase="0">选项一:首页</li>
+        <li *ngSwitchCase="1">选项二:新闻</li>
+        <li *ngSwitchCase="2">选项三:用户</li>
+        <li *ngSwitchCase="3">选项四:内容</li>
+    </ul>
+</div> -->
+<!-- 轮播 -->
+<div class="carousel8-30">
+    <ul [class]="carouselImg" style="left:0px;">
+        <li *ngFor="let item of imageSrc"><img src={{item}} width="500px" /></li>
+        <li><img src={{imageSrc[0]}} width="500px" /></li>
+    </ul>
+    <div class="left" (click)="onClickMove('left')">&lt;</div>
+    <div class="right" (click)="onClickMove('right')">&gt;</div>
+    <ol class="imgIndex">
+        <li *ngFor="let item of imageSrc;let i = index" [class]="i==0?'action':''" (click)="imgIndex(i)"></li>
+    </ol>
+</div>
+<!-- <div class="center">
+    <ul class="center-list" [ngStyle]="jdstyle">
+        <li *ngFor="let item of imageSrc"><img src={{item}} width="500px" alt=""></li>
+    </ul>
+    <div>
+        <div class="left">&lt;</div>
+        <div class="right">&gt;</div>
+    </div>
+    <div class="jd">
+        <ul>
+            <li *ngFor="let item of imageSrc;let i = index" [class.active]="i===index" (mouseover)="onMouseover(i)">
+            </li>
+        </ul>
+    </div>
+</div> -->

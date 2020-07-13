@@ -1,0 +1,16 @@
+<div class="september4one">
+    <div>
+        <div appChanger>系统</div>
+        <p>{{str|changerone}}</p>
+    </div>
+    <div>
+        <div appChanger>官方公告</div>
+        <div *ngFor="let item of notice" class="list">
+            <div class="list-p">{{item.text|changerone:17}}</div>
+            <span class="list-d">{{item.date|date:"MM-dd"}}</span>
+        </div>
+    </div>
+</div>
+<div class="september4one-percentage">
+    <p>北京市发布2019年企业工资指导线基准线为{{num | percent:"1.0-2"}}至{{num1 | percent:"1.0-2"}}</p>
+</div>

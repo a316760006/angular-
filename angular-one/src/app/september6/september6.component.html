@@ -1,0 +1,55 @@
+<div class="center" [hidden]="isShow">
+    <!-- #userForm  -->
+    <form #userForm="ngForm" (ngSubmit)="success()">
+        <div class="form-group">
+            <label for="name">姓名：</label>
+            <input type="text" class="form-control" id="name" name="textname" [value]="model.name"
+                [(ngModel)]="model.name" required #name="ngModel" />
+            <div class="alert alert-danger" [hidden]="name.valid||name.pristine">名字不允许为空</div>
+        </div>
+        <div>
+            <label class="radio-inline">
+                <input type="radio" name="sex" value="男" [(ngModel)]="model.sex" required>男
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="sex" value="女" [(ngModel)]="model.sex">女
+            </label>
+        </div>
+        <select class="form-control" name="sele" [(ngModel)]="model.jg" required>
+            <option *ngFor="let item of arr" [value]='item'>{{item}}</option>
+        </select>
+        <button type="submit" class="btn btn-success" [disabled]="!userForm.form.valid">提交</button>
+        <!-- 创建新用户 -->
+        <button type="button" class="btn btn-success" (click)="addRow();userForm.reset()"
+            [disabled]="!userForm.form.valid">创建新用户</button>
+    </form>
+    <p>id:{{model.id}}我是:{{model.name}}性别为:{{model.sex}}籍贯是:{{model.jg}}</p>
+</div>
+<div class="btn-div" [hidden]="!isShow" (click)="success()">查看信息模块</div>
+<!-- 查看提交信息 -->
+<div [hidden]="!isShow">
+    <div class="form-group">
+        <label for="name">姓名: {{model.name}}</label>
+    </div>
+    <div class="form-group">
+        <label for="name">性别: {{model.sex}}</label>
+    </div>
+    <div class="form-group">
+        <label for="name">籍贯: {{model.jg}}</label>
+    </div>
+</div>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <td>姓名</td>
+            <td>性别</td>
+            <td>籍贯</td>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+<!-- 模板引用变量可以访问模板中输入框的 Angular 控件,这里创建了名叫 name 的变量,并且赋值为"ngModel" -->
+<!-- 你把 div 元素的 hidden 属性绑定到 name 控件的属性,这样就可以控制"姓名"字段错误信息的可见性了,ng-invalid -->
+<!-- heroForm 变量是一个到 NgForm 指令的引用,他代表改表单的整体 -->
+<!-- NgForm 的指令为 form 增补了一些额外特性,他会控制那些带有 ngModel 指令和 name 属性的元素,监听他们的属性(包括其他有效性) 他还有自己的 valid 属性,这个属性只有在他包括的每个控件都有效时才是真 -->

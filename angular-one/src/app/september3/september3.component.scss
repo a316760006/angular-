@@ -1,0 +1,21 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+table{
+    border-collapse: collapse;
+}
+table thead{
+    background: skyblue;
+}
+tr td{
+    border: 1px solid black;
+    text-align: center;
+    width: 50px;
+}
+table{
+    margin: 0 auto; 
+}
+.a{
+    background: green;
+}

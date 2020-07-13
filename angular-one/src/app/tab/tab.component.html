@@ -1,0 +1,28 @@
+<p>tab works!</p>
+<!-- 导航栏 -->
+<!-- <ul class="nav-list">
+    <li class="nav-li" *ngFor="let item of nav;let i = index">
+        <div (click)="onClickNav(i)">{{item}}</div>
+    </li>
+</ul> -->
+<!-- 选项卡 -->
+<!-- <ul class="nav-list">
+    <li class="tab-li" *ngFor="let item of nav;let i = index">
+        <div (click)="onClickTab(i)">{{item}}</div>
+    </li>
+</ul> -->
+<!-- <ul [ngSwitch]='case'>
+    <li *ngSwitchCase="0">选项一:首页</li>
+    <li *ngSwitchCase="1">选项二:新闻</li>
+    <li *ngSwitchCase="2">选项三:用户</li>
+    <li *ngSwitchCase="3">选项四:内容</li>
+    <li *ngSwitchDefault>默认选项</li>
+</ul> -->
+<!-- <div [class.red]="false" *ngFor="let item of arr;let i = index">
+    <div class="content" *ngIf="i==c1">
+        {{item.count}}
+    </div>
+</div> -->
+<div [ngClass]="t1"></div>
+<div [ngClass]="[c1,c2]">1</div>
+<div [ngClass]="{'c1':true}">2</div>

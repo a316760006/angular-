@@ -1,0 +1,35 @@
+<!-- 1. 大小写转换 -->
+<!-- <p>{{str| uppercase}}</p> -->
+<!-- <p>{{str| lowercase}}</p> -->
+<!-- 2. 日期转换 -->
+<!-- <p>{{date | date:'yyyy-MM-dd HH:mm:ss'}}</p> -->
+<!-- <p>{{date | date:'yyyy年MM月dd日 HH时mm分ss秒'}}</p> -->
+<!-- <p>{{date | date:'format'}}</p> -->
+<!-- 3. 保留小数位数 -->
+<!-- <p>{{num | number:'2.2-4' }}</p> -->
+<!-- 4. 对象序列化 -->
+<!-- <p>{{obj | json}}</p> -->
+<!-- 5. 数字转化成货币样式 -->
+<!-- <p>{{money | currency:'USD':true:'1.2-3'}}</p> -->
+<!-- 6. 字符串切割 -->
+<!-- <p>{{str | slice:1:7}}</p> -->
+<!-- 7. 百分数转换：分数小数都可以转成百分数 -->
+<!-- <p>百分数转换：{{number | percent:"1.2-4"}}</p> -->
+<!-- 8. <p>管道链：{{"visionwei" | uppercase | slice:3:6}}</p> -->
+
+<ul class="september3oneUl">
+    <li *ngFor="let item of imgSrc" class="september3oneBox">
+        <div>
+            <img src={{item.src}} alt="">
+        </div>
+        <p>{{item.title|slice:0:30}}</p>
+        <p class="money">{{item.money|currency:'￥':false:'1.2-3'}}</p>
+    </li>
+</ul>
+<ul class="september3onelist">
+    <li *ngFor='let item of list;let i = index'>
+        <span [class.one]='i===0' [class.two]='i===1' [class.three]='i===2'>{{i+1}}</span>
+        <span>{{item.text}}</span>
+        <span class="date">{{item.date|date:"yyyy-MM-dd"}}</span>
+    </li>
+</ul>

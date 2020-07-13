@@ -1,0 +1,14 @@
+#box9-2{
+    width: 500px;
+    margin: 0 auto;
+    li{
+        padding: 10px;
+        p{
+            margin-bottom: 5px; 
+        }
+    }
+}
+.active{
+    background: #eee;
+    color: darkorange;
+}

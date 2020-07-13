@@ -1,0 +1,42 @@
+<!-- 
+ 数据绑定 {{}}
+ 双向数据绑定 [(ngModel)]
+ 条件渲染 *ngIf
+ -->
+<p>hero works!</p>
+<!-- <div *ngIf="isShow">123</div> -->
+<!-- for 循环 -->
+<!-- <ul>
+    <li *ngFor="let item of arr;let i=index">
+        <div *ngIf="i%2==0" id="a">{{item}}</div>
+        <div *ngIf="i%2!==0" id="b">{{item}}</div>
+    </li>
+</ul> -->
+<!-- hidden 显示隐藏 -->
+<!-- <div [hidden]="show">显示隐藏</div> -->
+<!-- innerHTML 改变内容 -->
+<!-- <div [innerHtml]="h"></div> -->
+<!-- switch 条件渲染 -->
+<!-- <ul [ngSwitch]='score'>
+    <li *ngSwitchCase="1">已支付</li>
+    <li *ngSwitchCase="2">订单已发货</li>
+    <li *ngSwitchCase="3">已发货</li>
+    <li *ngSwitchDefault>无效</li>
+</ul> -->
+<!-- 遍历对象 -->
+<!-- <ul>
+    <li *ngFor="let item of arrObject">{{item.name}}</li>
+</ul> -->
+<!-- 属性指令{{}}或者是用[] -->
+<!-- <img src="{{imageurl}}" width="50px" alt=""> -->
+<!-- <div [id]="uu">fefre</div> -->
+<!-- 事件指令 -->
+<!-- <p>{{count}}</p> -->
+<button (click)="onClickAdd($event)">点击自增</button>
+<button (click)="onclickCon('b')">点击打印</button>
+<p [id]="change" (mouseover)="onMouseover()" (mouseout)="onMouseout()">鼠标放上改变颜色</p>
+<div #a1 (click)="fn(a1)">获取target</div>
+
+<ul class="list">
+    <li *ngFor="let item of arr;let i = index" (mouseover)="fn(i)">{{i}}</li>
+</ul>

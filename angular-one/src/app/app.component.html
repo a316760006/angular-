@@ -1,0 +1,47 @@
+<!-- 第一种方式导航条 -->
+<!-- <ul class="list1">
+  <li *ngFor="let item of arr;let i=index" [class]="i==c1?'active':''"  (mouseover)="setBgc(i)"> 
+    {{item}}
+  </li>
+  </ul> -->
+<!-- 第二种方式导航条 -->
+<!-- <ul class="list1">
+    <li *ngFor="let item of arr;l-et i=index" [class.active]="i==c1?true:false"  (mouseover)="setBgc(i)"> 
+      {{item}}
+    </li>
+    </ul> -->
+<!-- tab如果 c1变量==i显示tab *ngIf-->
+<!-- <ul class="{{t1}}">
+  <li *ngFor="let item of arr;let i=index" [class]="i==c1?'active':''"
+  (mouseover)="getContent(i)">{{item.name}}</li> 
+ </ul>
+ <div *ngFor="let item of arr;let i=index">
+   <div class="content" *ngIf="i==c1">
+   {{item.content}}
+ </div>
+ </div>  -->
+<!-- 第二种tab [class.active]激活active（状态）-->
+<!-- <ul class="list1">
+    <li *ngFor="let item of arr1;let i=index" 
+    [class.active]="item.state"  (mouseover)="setBgc(i)"> 
+      {{item.name}}
+    </li>
+    </ul>
+    <div  class="content" *ngFor="let item of arr1;
+    let i=index" [class.active1]="item.state">
+      {{item.content}}</div> -->
+
+<!-- <div [ngClass]="t1">第一种ngclass方式</div> -->
+<!-- 2 -->
+<!-- <div [ngClass]="t2">第二种ngclass方式</div> -->
+<!-- 3 -->
+<!-- <div [ngClass]="t3">第三种ngclass方式</div> -->
+<!-- 4 -->
+<!-- <div [ngClass]="t4">第四种ngclass方式</div> -->
+<div class="parentdiv">dsatgf</div>
+<img id="img" src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3402711906,2533185172&fm=26&gp=0.jpg" />
+<ul id="list">
+  <li class="lb1">列表一</li>
+  <li class="lb1">列表二</li>
+</ul>
+<input type="text" id="input1" value="">

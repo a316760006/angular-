@@ -1,0 +1,133 @@
+.div8-30{
+    display: flex;
+    .nav-list8-30{
+        width: 15%;
+        border: 1px solid black;
+        li{
+            padding: 15px;
+        }
+        .active{
+            color: white;
+            background: skyblue;
+        }
+    }
+    .nav-content8-30{
+        width: 85%;
+        border: 1px solid black;
+        color: red;
+        background: pink;
+    }
+}
+.carousel8-30{
+    width: 500px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    .left,.right{
+        background: rgba(0,0,0,0.5);
+        width: 30px;
+        height: 30px;
+        border-radius: 50px;
+        text-align: center;
+        line-height: 30px;
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        cursor:pointer;
+        z-index: 1px;
+    }
+    .left{
+        left: 10px;
+        top: 135px;
+    }
+    .right{
+        right: 10px;
+        top: 135px;
+    }
+    .carousel-img{
+        transition: all 0.5s;
+        display: flex;
+        position: relative;
+    }
+    .imgIndex{
+        position: absolute;
+        bottom: 0px;
+        z-index: 1px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        li{
+            float: left;
+            border-radius: 50px;
+            width: 13px;
+            height: 13px;
+            background: rgba(0,0,0,0.5);
+            margin: 0 2px;
+            cursor:pointer;
+        }
+        .action{
+            background: rgba(255,255,255,0.5);
+        }
+    }
+}
+
+
+
+// *{
+//     margin: 0 auto;
+//     padding: 0px;
+// }
+// .center{
+//     width: 500px;
+//     height: 281px;
+//     border: 1px solid black;
+//     position: relative;
+//     overflow: hidden;
+//     .center-list{
+//         transition: all 0.5s;
+//         display: flex;
+//         position: relative;
+//         li{
+//             float: left;
+//         }
+//     }
+//     .jd{
+//         position: absolute;
+//         bottom: 8px;
+//         left: 50%;
+//         transform: translate(-50%, -50%);
+//         ul{
+//             li{
+//                 float: left;
+//                 border-radius: 50px;
+//                 width: 13px;
+//                 height: 13px;
+//                 background: rgba(0,0,0,0.5);
+//                 margin: 0 2px;
+//                 cursor:pointer;
+//             }
+//             .active{
+//                 background: rgba(255,255,255,0.5);
+//             }
+//         }
+//     }
+//     .left,.right{
+//         background: rgba(0,0,0,0.5);
+//         width: 30px;
+//         height: 30px;
+//         border-radius: 50px;
+//         text-align: center;
+//         line-height: 30px;
+//         color: white;
+//         font-size: 20px;
+//         position: absolute;
+//         cursor:pointer;
+//         top: 50%;
+//         transform: translate(0, -50%);
+//     }
+//     .left{
+//         left: 10px;
+//     }
+//     .right{
+//         right: 10px;
+//     }
+// }
